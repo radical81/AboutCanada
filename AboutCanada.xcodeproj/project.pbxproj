@@ -13,6 +13,7 @@
 		86A2E8502046DBAB0099CCC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86A2E84F2046DBAB0099CCC0 /* Assets.xcassets */; };
 		86A2E8532046DBAB0099CCC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86A2E8512046DBAB0099CCC0 /* LaunchScreen.storyboard */; };
 		86A2E85E2046DBAB0099CCC0 /* AboutCanadaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A2E85D2046DBAB0099CCC0 /* AboutCanadaTests.swift */; };
+		86A2E86C2046DEA50099CCC0 /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A2E86B2046DEA50099CCC0 /* Fact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		86A2E8592046DBAB0099CCC0 /* AboutCanadaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AboutCanadaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A2E85D2046DBAB0099CCC0 /* AboutCanadaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCanadaTests.swift; sourceTree = "<group>"; };
 		86A2E85F2046DBAB0099CCC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86A2E86B2046DEA50099CCC0 /* Fact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		86A2E8682046DCC10099CCC0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				86A2E86B2046DEA50099CCC0 /* Fact.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86A2E84B2046DBAB0099CCC0 /* ViewController.swift in Sources */,
+				86A2E86C2046DEA50099CCC0 /* Fact.swift in Sources */,
 				86A2E8492046DBAB0099CCC0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
