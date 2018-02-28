@@ -77,6 +77,9 @@
 		86A2E8472046DBAB0099CCC0 /* AboutCanada */ = {
 			isa = PBXGroup;
 			children = (
+				86A2E86A2046DCDE0099CCC0 /* Controller */,
+				86A2E8692046DCD10099CCC0 /* View */,
+				86A2E8682046DCC10099CCC0 /* Model */,
 				86A2E8482046DBAB0099CCC0 /* AppDelegate.swift */,
 				86A2E84A2046DBAB0099CCC0 /* ViewController.swift */,
 				86A2E84C2046DBAB0099CCC0 /* Main.storyboard */,
@@ -94,6 +97,27 @@
 				86A2E85F2046DBAB0099CCC0 /* Info.plist */,
 			);
 			path = AboutCanadaTests;
+			sourceTree = "<group>";
+		};
+		86A2E8682046DCC10099CCC0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		86A2E8692046DCD10099CCC0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		86A2E86A2046DCDE0099CCC0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
