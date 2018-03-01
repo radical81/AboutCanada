@@ -25,6 +25,7 @@ class FactTableViewCell: UITableViewCell {
     
     func updateCell() {
         title.text = factItem?.title
+        factDescription.text = factItem?.description
         
         if factItem!.imageData != nil {
             photo.image = UIImage(data:factItem!.imageData! as Data)
