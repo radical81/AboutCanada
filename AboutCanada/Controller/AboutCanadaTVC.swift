@@ -17,9 +17,14 @@ class AboutCanadaTVC: UITableViewController {
         static let cellReuseIdentifier = "factsaboutcanada"
     }
 
+    @IBAction func refresh(_ sender: UIRefreshControl) {
+        refreshControl?.endRefreshing()
+        runAPI()
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         NotificationCenter.default.addObserver(self, selector: #selector(AboutCanadaTVC.appBecomeActive), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
         runAPI()
     }
