@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        testRunData() // For debugging URL call
+//        testRunData() // For debugging URL call
     }
 
     func testRunData() {
