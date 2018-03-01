@@ -9,7 +9,7 @@
 import Foundation
 
 class APIManager {
-    func loadData(_ urlString: String, completion: @escaping ([Fact]) -> Void) {
+    func loadData(_ urlString: String, completion: @escaping (String, [Fact]) -> Void) {
         let config = URLSessionConfiguration.ephemeral
         let session = URLSession(configuration: config)
         guard let url = URL(string: urlString) else {
@@ -60,7 +60,7 @@ class APIManager {
                     
                     DispatchQueue.global(qos: DispatchQoS.QoSClass.default).async {
                         DispatchQueue.main.async {
-                            completion(factArray)
+                            completion(json["title"] as! String, factArray)
                         }
                     }
                 }

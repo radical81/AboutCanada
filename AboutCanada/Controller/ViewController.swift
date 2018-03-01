@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         api.loadData(CANADA_SOURCE, completion: didLoadData)
     }
     
-    func didLoadData(_ items: [Fact]) {
+    func didLoadData(_ heading: String, items: [Fact]) {
         for item in items {
             print("title = \(item.title!)")
             print("description = \(item.description!)")

@@ -38,11 +38,13 @@ class AboutCanadaTVC: UITableViewController {
         api.loadData(CANADA_SOURCE, completion: didLoadData)
     }
     
+    
     deinit {
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
     }
 
-    func didLoadData(_ items: [Fact]) {
+    func didLoadData(_ heading: String, items: [Fact]) {
+        self.navigationItem.title = heading
         self.factItems = items
         tableView.reloadData()
     }
