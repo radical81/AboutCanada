@@ -10,7 +10,14 @@ import UIKit
 
 class FactTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var title: UILabel!
+    
+    @IBOutlet weak var factDescription: UILabel!
+    
+    @IBOutlet weak var photo: UIImageView!
+    
     override func awakeFromNib() {
+        
         super.awakeFromNib()
         // Initialization code
     }

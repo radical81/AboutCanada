@@ -57,9 +57,11 @@ class AboutCanadaTVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: storyboard.cellReuseIdentifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: storyboard.cellReuseIdentifier, for: indexPath) as! FactTableViewCell
 
-        cell.textLabel?.text = self.factItems[indexPath.row].title
+        cell.title.text = self.factItems[indexPath.row].title
+        cell.factDescription.text = self.factItems[indexPath.row].description
+        
 
         return cell
     }
