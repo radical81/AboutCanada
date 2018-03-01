@@ -17,6 +17,7 @@
 		86A2E86F2046DFB10099CCC0 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A2E86E2046DFB10099CCC0 /* APIManager.swift */; };
 		86A2E8712046E3430099CCC0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A2E8702046E3430099CCC0 /* Constants.swift */; };
 		86D118BE204818C8007F241E /* AboutCanadaTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D118BD204818C8007F241E /* AboutCanadaTVC.swift */; };
+		86D118C020482612007F241E /* FactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D118BF20482612007F241E /* FactTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		86A2E86E2046DFB10099CCC0 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		86A2E8702046E3430099CCC0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		86D118BD204818C8007F241E /* AboutCanadaTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCanadaTVC.swift; sourceTree = "<group>"; };
+		86D118BF20482612007F241E /* FactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			children = (
 				86A2E84A2046DBAB0099CCC0 /* ViewController.swift */,
 				86D118BD204818C8007F241E /* AboutCanadaTVC.swift */,
+				86D118BF20482612007F241E /* FactTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			files = (
 				86A2E8712046E3430099CCC0 /* Constants.swift in Sources */,
 				86A2E86F2046DFB10099CCC0 /* APIManager.swift in Sources */,
+				86D118C020482612007F241E /* FactTableViewCell.swift in Sources */,
 				86A2E84B2046DBAB0099CCC0 /* ViewController.swift in Sources */,
 				86D118BE204818C8007F241E /* AboutCanadaTVC.swift in Sources */,
 				86A2E86C2046DEA50099CCC0 /* Fact.swift in Sources */,
