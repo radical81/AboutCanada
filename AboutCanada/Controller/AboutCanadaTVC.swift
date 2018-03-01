@@ -11,6 +11,7 @@ import UIKit
 class AboutCanadaTVC: UITableViewController {
 
     var factItems = [Fact]()
+    let CELL_HEIGHT: CGFloat = 200
     
     fileprivate struct storyboard {
         static let cellReuseIdentifier = "factsaboutcanada"
@@ -62,5 +63,9 @@ class AboutCanadaTVC: UITableViewController {
         cell.factItem = self.factItems[indexPath.row]
         
         return cell
+    }
+    
+    override public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return CELL_HEIGHT
     }
 }
