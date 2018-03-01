@@ -24,9 +24,10 @@ class AboutCanadaTVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         NotificationCenter.default.addObserver(self, selector: #selector(AboutCanadaTVC.appBecomeActive), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
         runAPI()
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = CELL_HEIGHT
     }
     
     @objc func appBecomeActive() {
@@ -70,9 +71,5 @@ class AboutCanadaTVC: UITableViewController {
         cell.factItem = self.factItems[indexPath.row]
         
         return cell
-    }
-    
-    override public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CELL_HEIGHT
     }
 }
