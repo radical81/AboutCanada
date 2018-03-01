@@ -19,15 +19,22 @@ class AboutCanadaTVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        NotificationCenter.default.addObserver(self, selector: #selector(AboutCanadaTVC.appBecomeActive), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
         runAPI()
     }
     
+    @objc func appBecomeActive() {
+        runAPI()
+    }
 
     func runAPI() {
         let api = APIManager()
         api.loadData(CANADA_SOURCE, completion: didLoadData)
     }
     
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
+    }
 
     func didLoadData(_ items: [Fact]) {
         self.factItems = items
