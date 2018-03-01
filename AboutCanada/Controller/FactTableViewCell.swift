@@ -16,6 +16,27 @@ class FactTableViewCell: UITableViewCell {
     
     @IBOutlet weak var photo: UIImageView!
     
+    var imageHelper: ImageHelperDelegate?
+    var factItem: Fact? {
+        didSet {
+            updateCell()
+        }
+    }
+    
+    func updateCell() {
+        title.text = factItem?.title
+        
+        if factItem!.imageData != nil {
+            photo.image = UIImage(data:factItem!.imageData! as Data)
+        }
+        else {
+            //Get images in background thread
+            if imageHelper != nil && factItem!.imageHref != "" {
+                imageHelper?.getFactImage(factItem!, imageView: photo, imgUrl: factItem!.imageHref!)
+            }
+        }
+    }
+
     override func awakeFromNib() {
         
         super.awakeFromNib()

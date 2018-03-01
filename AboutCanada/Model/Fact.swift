@@ -8,11 +8,12 @@
 
 import Foundation
 
-struct Fact: Codable {
+class Fact: Codable {
     var title: String?
     var description: String?
     var imageHref: String?
-
+    var imageData: Data? //for storing generated image
+    
     init?(json: AnyObject) {
         guard let title = json["title"] as? String else {
             return nil

@@ -18,6 +18,8 @@
 		86A2E8712046E3430099CCC0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A2E8702046E3430099CCC0 /* Constants.swift */; };
 		86D118BE204818C8007F241E /* AboutCanadaTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D118BD204818C8007F241E /* AboutCanadaTVC.swift */; };
 		86D118C020482612007F241E /* FactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D118BF20482612007F241E /* FactTableViewCell.swift */; };
+		86D118C520482A07007F241E /* FactImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D118C420482A07007F241E /* FactImageHelper.swift */; };
+		86D118C720482A1B007F241E /* ImageHelperDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D118C620482A1B007F241E /* ImageHelperDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		86A2E8702046E3430099CCC0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		86D118BD204818C8007F241E /* AboutCanadaTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCanadaTVC.swift; sourceTree = "<group>"; };
 		86D118BF20482612007F241E /* FactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactTableViewCell.swift; sourceTree = "<group>"; };
+		86D118C420482A07007F241E /* FactImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactImageHelper.swift; sourceTree = "<group>"; };
+		86D118C620482A1B007F241E /* ImageHelperDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelperDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 		86A2E8472046DBAB0099CCC0 /* AboutCanada */ = {
 			isa = PBXGroup;
 			children = (
+				86D118C2204829E0007F241E /* Helper */,
+				86D118C3204829E7007F241E /* Delegate */,
 				86A2E86D2046DF930099CCC0 /* Service */,
 				86A2E86A2046DCDE0099CCC0 /* Controller */,
 				86A2E8692046DCD10099CCC0 /* View */,
@@ -141,6 +147,22 @@
 				86A2E86E2046DFB10099CCC0 /* APIManager.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		86D118C2204829E0007F241E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				86D118C420482A07007F241E /* FactImageHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		86D118C3204829E7007F241E /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				86D118C620482A1B007F241E /* ImageHelperDelegate.swift */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +269,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				86A2E8712046E3430099CCC0 /* Constants.swift in Sources */,
+				86D118C720482A1B007F241E /* ImageHelperDelegate.swift in Sources */,
+				86D118C520482A07007F241E /* FactImageHelper.swift in Sources */,
 				86A2E86F2046DFB10099CCC0 /* APIManager.swift in Sources */,
 				86D118C020482612007F241E /* FactTableViewCell.swift in Sources */,
 				86A2E84B2046DBAB0099CCC0 /* ViewController.swift in Sources */,
