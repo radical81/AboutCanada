@@ -14,6 +14,8 @@
 		86A2E8532046DBAB0099CCC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86A2E8512046DBAB0099CCC0 /* LaunchScreen.storyboard */; };
 		86A2E85E2046DBAB0099CCC0 /* AboutCanadaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A2E85D2046DBAB0099CCC0 /* AboutCanadaTests.swift */; };
 		86A2E86C2046DEA50099CCC0 /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A2E86B2046DEA50099CCC0 /* Fact.swift */; };
+		86A2E86F2046DFB10099CCC0 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A2E86E2046DFB10099CCC0 /* APIManager.swift */; };
+		86A2E8712046E3430099CCC0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A2E8702046E3430099CCC0 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		86A2E85D2046DBAB0099CCC0 /* AboutCanadaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCanadaTests.swift; sourceTree = "<group>"; };
 		86A2E85F2046DBAB0099CCC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86A2E86B2046DEA50099CCC0 /* Fact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
+		86A2E86E2046DFB10099CCC0 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		86A2E8702046E3430099CCC0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,15 +83,16 @@
 		86A2E8472046DBAB0099CCC0 /* AboutCanada */ = {
 			isa = PBXGroup;
 			children = (
+				86A2E86D2046DF930099CCC0 /* Service */,
 				86A2E86A2046DCDE0099CCC0 /* Controller */,
 				86A2E8692046DCD10099CCC0 /* View */,
 				86A2E8682046DCC10099CCC0 /* Model */,
 				86A2E8482046DBAB0099CCC0 /* AppDelegate.swift */,
-				86A2E84A2046DBAB0099CCC0 /* ViewController.swift */,
 				86A2E84C2046DBAB0099CCC0 /* Main.storyboard */,
 				86A2E84F2046DBAB0099CCC0 /* Assets.xcassets */,
 				86A2E8512046DBAB0099CCC0 /* LaunchScreen.storyboard */,
 				86A2E8542046DBAB0099CCC0 /* Info.plist */,
+				86A2E8702046E3430099CCC0 /* Constants.swift */,
 			);
 			path = AboutCanada;
 			sourceTree = "<group>";
@@ -119,8 +124,17 @@
 		86A2E86A2046DCDE0099CCC0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				86A2E84A2046DBAB0099CCC0 /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		86A2E86D2046DF930099CCC0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				86A2E86E2046DFB10099CCC0 /* APIManager.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +240,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86A2E8712046E3430099CCC0 /* Constants.swift in Sources */,
+				86A2E86F2046DFB10099CCC0 /* APIManager.swift in Sources */,
 				86A2E84B2046DBAB0099CCC0 /* ViewController.swift in Sources */,
 				86A2E86C2046DEA50099CCC0 /* Fact.swift in Sources */,
 				86A2E8492046DBAB0099CCC0 /* AppDelegate.swift in Sources */,
